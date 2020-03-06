@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Blog</title>
+    <title>Pea Lab</title>
 
     <!-- Boostrap -->
     <!-- Latest compiled and minified CSS -->
@@ -23,16 +23,33 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One&display=swap" rel="stylesheet">
 
   </head>
-  <body class='loader'>
+  <style>
+    body {
+      background-image: url({% static 'images/technology_trans.png' %});
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      height: 240px;
+      width: 350px;
+    }
+  </style>
+  <body class='#'>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-default techfont custom-navbar">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My blog</a></li>
+          <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}">Pea Lab</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="https://www.github.com">Github</a></li>
-          <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          <li><a href="{% url 'research' %}">Research</a></li>
+          <li><a href="{% url 'app' %}">App</a></li>
+          <!-- <li><a href="https://www.github.com">Github</a></li> -->
+          <!-- <li><a href="https://www.linkedin.com">LinkedIn</a></li> -->
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

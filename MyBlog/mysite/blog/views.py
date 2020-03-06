@@ -13,6 +13,12 @@ from django.views.generic import (TemplateView,ListView,
 class AboutView(TemplateView):
     template_name = 'about.html'
 
+class ResearchView(TemplateView):
+    template_name = 'research.html'
+
+class AppView(TemplateView):
+    template_name = 'app.html'
+
 class PostListView(ListView):
     model = Post
 
