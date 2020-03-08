@@ -1,7 +1,3 @@
-
-
-
-
 .techfont {
   font-family: 'Russo One',sans-serif;
   font-size: 1.5em;
@@ -39,7 +35,7 @@
 
 /* COLOR CHANGER BELOW */
 
-.loader {
+/* .loader {
   filter:hue-rotate(0deg);
   color:linear-gradient(45deg,#0f8,#08f);
   animation:hue 10000ms infinite linear;
@@ -73,4 +69,4 @@
   0%{filter: hue-rotate(0deg);}
   100%{filter:hue-rotate(360deg);}
 
-}
+} */

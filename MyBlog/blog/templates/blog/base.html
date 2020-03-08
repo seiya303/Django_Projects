@@ -17,27 +17,31 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+
+    <!-- Custom JS -->
+    <!-- <script type="text/javascript" src="{% static 'js/gravitypoints.js' %}"></script> -->
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One&display=swap" rel="stylesheet">
 
+    <style>
+      body {
+        background-image: url("{% static 'images/technology_trans.jpg' %}");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        height: 240px;
+        width: 350px;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background-image: url({% static 'images/technology_trans.png' %});
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-    img {
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 5px;
-      height: 240px;
-      width: 350px;
-    }
-  </style>
+
   <body class='#'>
 
     <!-- NAVBAR -->
@@ -75,7 +79,8 @@
     </nav>
 
     <!-- CONTENT BLOCK -->
-    <div class="content container">
+    <!-- <canvas id="c"></canvas> -->
+    <div class="content container info">Click to add gravity points.
       <div class="row">
         <div class="col-md-8">
           <div class="blog_posts">
